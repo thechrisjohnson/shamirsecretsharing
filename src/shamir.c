@@ -1,3 +1,4 @@
+#include <bsd/stdlib.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,7 +15,7 @@ int main(int argc, char** argv)
     printf("Keys: \n");
     for (int i = 0; i < 5; i++)
     {
-        printf("\t[%d, %d]\n", keys[i].x, keys[i].y);
+        printf("\t[%u, %u]\n", keys[i].x, keys[i].y);
     }
     
     return result;

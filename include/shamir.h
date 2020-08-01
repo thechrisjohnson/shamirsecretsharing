@@ -2,12 +2,13 @@
 #define SHAMIR_H
 
 #include <math.h>
+#include <stdint.h>
 
-#define FINITE_FIELD_SIZE pow(10, 10)
+#define FINITE_FIELD_SIZE pow(10, 5)
 
 struct Key{
-    int x;
-    int y;
+    uint x;
+    ulong y;
     int exponentMax;
 };
 
