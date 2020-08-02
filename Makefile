@@ -1,7 +1,8 @@
 IDIR=./include
 CC=gcc
+UNAME_S := $(shell uname -s)
 
-ifeq ($(OS), Linux)
+ifeq ($(UNAME_S), Linux)
 	CFLAGS=-lbsd -lm -I$(IDIR)
 else
 	CFLAGS=-I$(IDIR)
