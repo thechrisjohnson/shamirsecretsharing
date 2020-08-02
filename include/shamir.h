@@ -7,8 +7,8 @@
 #define FINITE_FIELD_SIZE pow(10, 5)
 
 struct Key{
-    uint x;
-    ulong y;
+    uint32_t x;
+    uint64_t y;
     int exponentMax;
 };
 
