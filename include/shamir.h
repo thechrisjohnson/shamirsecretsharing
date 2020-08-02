@@ -13,5 +13,6 @@ struct Key{
 };
 
 int shamirEncrypt(int numKeys, int requiredDescryptors, int secret, struct Key *output);
+int shamirDecrypt(int numKeys, struct Key *output);
 
 #endif
